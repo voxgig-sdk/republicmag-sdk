@@ -1,0 +1,168 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Republicmag API",
+    "description": "This API provides access to republicmag.io, an independent Russian-language publication that offers analytics, news, and commentary on politics, economics, society, and culture. Users can retrieve recent posts and other relevant content through this interface.",
+    "version": "1.0.0",
+    "contact": {
+      "url": "https://github.com/l0v3m0n3y/republicmag"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://republicmag.io",
+      "description": "Production server"
+    }
+  ],
+  "paths": {
+    "/api/posts/recent": {
+      "get": {
+        "summary": "Get Recent Posts",
+        "description": "Retrieves the most recent posts from republicmag.io including analytics, news, and commentary on politics, economics, society, and culture.",
+        "operationId": "getPostsRecent",
+        "tags": [
+          "Posts"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with recent posts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Post"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Post": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the post"
+          },
+          "title": {
+            "type": "string",
+            "description": "Title of the post"
+          },
+          "content": {
+            "type": "string",
+            "description": "Full content of the post"
+          },
+          "excerpt": {
+            "type": "string",
+            "description": "Short excerpt or summary of the post"
+          },
+          "author": {
+            "type": "string",
+            "description": "Author of the post"
+          },
+          "category": {
+            "type": "string",
+            "description": "Category of the post (politics, economics, society, culture, etc.)",
+            "enum": [
+              "politics",
+              "economics",
+              "society",
+              "culture",
+              "analytics",
+              "news",
+              "commentary"
+            ]
+          },
+          "publishedAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Publication date and time of the post"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last update date and time of the post"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to the full post on republicmag.io"
+          },
+          "imageUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to the post's featured image"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Tags associated with the post"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "publishedAt"
+        ]
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Error message"
+          },
+          "code": {
+            "type": "string",
+            "description": "Error code"
+          },
+          "message": {
+            "type": "string",
+            "description": "Detailed error message"
+          }
+        },
+        "required": [
+          "error"
+        ]
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Posts",
+      "description": "Operations related to retrieving posts from republicmag.io"
+    }
+  ],
+  "externalDocs": {
+    "description": "GitHub Repository",
+    "url": "https://github.com/l0v3m0n3y/republicmag"
+  }
+}

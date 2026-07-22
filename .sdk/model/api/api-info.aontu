@@ -1,0 +1,25 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      contact: {
+        url: "https://github.com/l0v3m0n3y/republicmag"
+      }
+      description: "This API provides access to republicmag.io, an independent Russian-language publication that offers analytics, news, and commentary on politics, economics, society, and culture. Users can retrieve recent posts and other relevant content through this interface."
+      servers: [
+        {
+          description: "Production server"
+          url: "https://republicmag.io"
+        }
+      ]
+      summary: "This API provides access to republicmag.io, an independent Russian-language publication that offers analytics, news, and commentary on politics, economics, society, and culture."
+      title: "Republicmag API"
+      version: "1.0.0"
+      website: "https://github.com/l0v3m0n3y/republicmag"
+    }
+  }
+}
+
