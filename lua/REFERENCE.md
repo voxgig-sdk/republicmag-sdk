@@ -95,11 +95,11 @@ local post = client:Post(nil)
 | `content` | `string` | No |  |
 | `excerpt` | `string` | No |  |
 | `id` | `string` | Yes |  |
-| `image_url` | `string` | No |  |
-| `published_at` | `string` | Yes |  |
-| `tag` | `table` | No |  |
+| `imageUrl` | `string` | No |  |
+| `publishedAt` | `string` | Yes |  |
+| `tags` | `table` | No |  |
 | `title` | `string` | Yes |  |
-| `updated_at` | `string` | No |  |
+| `updatedAt` | `string` | No |  |
 | `url` | `string` | No |  |
 
 ### Operations

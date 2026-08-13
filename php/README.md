@@ -125,7 +125,8 @@ Create a mock client for unit testing — no server required:
 ```php
 $client = RepublicmagSDK::test();
 
-// Entity ops return the bare mock record (throws on error).
+// Entity ops return the ENTITY (throws on error);
+// call data_get() for the mock record.
 $post = $client->Post()->list();
 print_r($post);
 ```
@@ -224,7 +225,7 @@ All entities share the same interface.
 
 ### Result shape
 
-Entity operations return the bare result data (an `array` for single-entity
+Entity operations return the ENTITY (call data_get() for the record) (an `array` for single-entity
 ops, a `list` for `list`) and throw on error. Wrap calls in
 `try`/`catch` to handle failures.
 
@@ -251,11 +252,11 @@ On error, `ok` is `false` and `$err` contains the error value.
 | `content` |  |
 | `excerpt` |  |
 | `id` |  |
-| `image_url` |  |
-| `published_at` |  |
-| `tag` |  |
+| `imageUrl` |  |
+| `publishedAt` |  |
+| `tags` |  |
 | `title` |  |
-| `updated_at` |  |
+| `updatedAt` |  |
 | `url` |  |
 
 Operations: List.
@@ -286,11 +287,11 @@ Create an instance: `$post = $client->Post();`
 | `content` | `string` |  |
 | `excerpt` | `string` |  |
 | `id` | `string` |  |
-| `image_url` | `string` |  |
-| `published_at` | `string` |  |
-| `tag` | `array` |  |
+| `imageUrl` | `string` |  |
+| `publishedAt` | `string` |  |
+| `tags` | `array` |  |
 | `title` | `string` |  |
-| `updated_at` | `string` |  |
+| `updatedAt` | `string` |  |
 | `url` | `string` |  |
 
 #### Example: List

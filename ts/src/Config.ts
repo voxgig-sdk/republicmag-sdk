@@ -21,7 +21,7 @@ class Config {
 
 
   main = {
-    name: 'ProjectName',
+    name: 'Republicmag',
   }
 
 
@@ -91,21 +91,21 @@ class Config {
         },
         {
           "active": true,
-          "name": "image_url",
+          "name": "imageUrl",
           "req": false,
           "type": "`$STRING`",
           "index$": 5
         },
         {
           "active": true,
-          "name": "published_at",
+          "name": "publishedAt",
           "req": true,
           "type": "`$STRING`",
           "index$": 6
         },
         {
           "active": true,
-          "name": "tag",
+          "name": "tags",
           "req": false,
           "type": "`$ARRAY`",
           "index$": 7
@@ -119,7 +119,7 @@ class Config {
         },
         {
           "active": true,
-          "name": "updated_at",
+          "name": "updatedAt",
           "req": false,
           "type": "`$STRING`",
           "index$": 9
@@ -141,6 +141,7 @@ class Config {
             {
               "active": true,
               "args": {},
+              "kind": "http",
               "method": "GET",
               "orig": "/api/posts/recent",
               "parts": [

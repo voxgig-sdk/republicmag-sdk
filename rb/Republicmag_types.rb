@@ -25,19 +25,19 @@
 # @!attribute [rw] id
 #   @return [String]
 #
-# @!attribute [rw] image_url
+# @!attribute [rw] imageUrl
 #   @return [String, nil]
 #
-# @!attribute [rw] published_at
+# @!attribute [rw] publishedAt
 #   @return [String]
 #
-# @!attribute [rw] tag
+# @!attribute [rw] tags
 #   @return [Array, nil]
 #
 # @!attribute [rw] title
 #   @return [String]
 #
-# @!attribute [rw] updated_at
+# @!attribute [rw] updatedAt
 #   @return [String, nil]
 #
 # @!attribute [rw] url
@@ -48,11 +48,11 @@ Post = Struct.new(
   :content,
   :excerpt,
   :id,
-  :image_url,
-  :published_at,
-  :tag,
+  :imageUrl,
+  :publishedAt,
+  :tags,
   :title,
-  :updated_at,
+  :updatedAt,
   :url,
   keyword_init: true
 )
@@ -74,19 +74,19 @@ Post = Struct.new(
 # @!attribute [rw] id
 #   @return [String, nil]
 #
-# @!attribute [rw] image_url
+# @!attribute [rw] imageUrl
 #   @return [String, nil]
 #
-# @!attribute [rw] published_at
+# @!attribute [rw] publishedAt
 #   @return [String, nil]
 #
-# @!attribute [rw] tag
+# @!attribute [rw] tags
 #   @return [Array, nil]
 #
 # @!attribute [rw] title
 #   @return [String, nil]
 #
-# @!attribute [rw] updated_at
+# @!attribute [rw] updatedAt
 #   @return [String, nil]
 #
 # @!attribute [rw] url
@@ -97,11 +97,11 @@ PostListMatch = Struct.new(
   :content,
   :excerpt,
   :id,
-  :image_url,
-  :published_at,
-  :tag,
+  :imageUrl,
+  :publishedAt,
+  :tags,
   :title,
-  :updated_at,
+  :updatedAt,
   :url,
   keyword_init: true
 )

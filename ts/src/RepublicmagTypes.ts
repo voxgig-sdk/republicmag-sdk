@@ -11,11 +11,11 @@ export interface Post {
   content?: string
   excerpt?: string
   id: string
-  image_url?: string
-  published_at: string
-  tag?: any[]
+  imageUrl?: string
+  publishedAt: string
+  tags?: any[]
   title: string
-  updated_at?: string
+  updatedAt?: string
   url?: string
 }
 
@@ -25,11 +25,17 @@ export interface PostListMatch {
   content?: string
   excerpt?: string
   id?: string
-  image_url?: string
-  published_at?: string
-  tag?: any[]
+  imageUrl?: string
+  publishedAt?: string
+  tags?: any[]
   title?: string
-  updated_at?: string
+  updatedAt?: string
   url?: string
+
+  // Selects a custom action instead of the plain list:
+  //   'recent'
+  // The remaining keys are that action's own payload.
+  $action?: string
+  [action: string]: any
 }
 

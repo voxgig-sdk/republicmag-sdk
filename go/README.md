@@ -265,11 +265,11 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 | `"content"` |  |
 | `"excerpt"` |  |
 | `"id"` |  |
-| `"image_url"` |  |
-| `"published_at"` |  |
-| `"tag"` |  |
+| `"imageUrl"` |  |
+| `"publishedAt"` |  |
+| `"tags"` |  |
 | `"title"` |  |
-| `"updated_at"` |  |
+| `"updatedAt"` |  |
 | `"url"` |  |
 
 Operations: List.
@@ -300,11 +300,11 @@ Create an instance: `post := client.Post(nil)`
 | `content` | `string` |  |
 | `excerpt` | `string` |  |
 | `id` | `string` |  |
-| `image_url` | `string` |  |
-| `published_at` | `string` |  |
-| `tag` | `[]any` |  |
+| `imageUrl` | `string` |  |
+| `publishedAt` | `string` |  |
+| `tags` | `[]any` |  |
 | `title` | `string` |  |
-| `updated_at` | `string` |  |
+| `updatedAt` | `string` |  |
 | `url` | `string` |  |
 
 #### Example: List

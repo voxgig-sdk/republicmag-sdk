@@ -24,6 +24,7 @@ require_relative 'prepare_method'
 require_relative 'prepare_params'
 require_relative 'prepare_path'
 require_relative 'prepare_query'
+require_relative 'graphql'
 require_relative 'result_basic'
 require_relative 'result_body'
 require_relative 'result_headers'
@@ -55,6 +56,8 @@ RepublicmagUtility.registrar = ->(u) {
   u.prepare_params = RepublicmagUtilities::PrepareParams
   u.prepare_path = RepublicmagUtilities::PreparePath
   u.prepare_query = RepublicmagUtilities::PrepareQuery
+  u.graphql_body = RepublicmagUtilities::GraphqlBody
+  u.graphql_errors = RepublicmagUtilities::GraphqlErrors
   u.result_basic = RepublicmagUtilities::ResultBasic
   u.result_body = RepublicmagUtilities::ResultBody
   u.result_headers = RepublicmagUtilities::ResultHeaders

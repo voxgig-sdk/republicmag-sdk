@@ -119,7 +119,8 @@ Create a mock client for unit testing — no server required:
 ```ruby
 client = RepublicmagSDK.test
 
-# Entity ops return the bare mock record (raises on error).
+# Entity ops return the ENTITY (raises on error);
+# call data_get for the mock record.
 post = client.Post.list()
 puts post
 ```
@@ -241,11 +242,11 @@ returns a result `Hash` with these keys:
 | `content` |  |
 | `excerpt` |  |
 | `id` |  |
-| `image_url` |  |
-| `published_at` |  |
-| `tag` |  |
+| `imageUrl` |  |
+| `publishedAt` |  |
+| `tags` |  |
 | `title` |  |
-| `updated_at` |  |
+| `updatedAt` |  |
 | `url` |  |
 
 Operations: List.
@@ -276,11 +277,11 @@ Create an instance: `post = client.Post`
 | `content` | `String` |  |
 | `excerpt` | `String` |  |
 | `id` | `String` |  |
-| `image_url` | `String` |  |
-| `published_at` | `String` |  |
-| `tag` | `Array` |  |
+| `imageUrl` | `String` |  |
+| `publishedAt` | `String` |  |
+| `tags` | `Array` |  |
 | `title` | `String` |  |
-| `updated_at` | `String` |  |
+| `updatedAt` | `String` |  |
 | `url` | `String` |  |
 
 #### Example: List

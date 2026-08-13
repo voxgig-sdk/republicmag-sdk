@@ -218,9 +218,9 @@ data **directly** — there is no wrapper:
 
 Check `err` first (it is non-`nil` on failure), then use `value`:
 
-    local post, err = client:Post():load()
+    local post, err = client:Post():list()
     if err then error(err) end
-    -- post is the loaded record
+    -- post is the record list
 
 Only `direct()` returns a response envelope — a `table` with `ok`,
 `status`, `headers`, and `data` keys.
@@ -236,11 +236,11 @@ Only `direct()` returns a response envelope — a `table` with `ok`,
 | `content` |  |
 | `excerpt` |  |
 | `id` |  |
-| `image_url` |  |
-| `published_at` |  |
-| `tag` |  |
+| `imageUrl` |  |
+| `publishedAt` |  |
+| `tags` |  |
 | `title` |  |
-| `updated_at` |  |
+| `updatedAt` |  |
 | `url` |  |
 
 Operations: List.
@@ -271,11 +271,11 @@ Create an instance: `local post = client:Post(nil)`
 | `content` | `string` |  |
 | `excerpt` | `string` |  |
 | `id` | `string` |  |
-| `image_url` | `string` |  |
-| `published_at` | `string` |  |
-| `tag` | `table` |  |
+| `imageUrl` | `string` |  |
+| `publishedAt` | `string` |  |
+| `tags` | `table` |  |
 | `title` | `string` |  |
-| `updated_at` | `string` |  |
+| `updatedAt` | `string` |  |
 | `url` | `string` |  |
 
 #### Example: List

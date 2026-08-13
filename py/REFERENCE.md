@@ -92,11 +92,11 @@ post = client.Post()
 | `content` | `str` | No |  |
 | `excerpt` | `str` | No |  |
 | `id` | `str` | Yes |  |
-| `image_url` | `str` | No |  |
-| `published_at` | `str` | Yes |  |
-| `tag` | `list` | No |  |
+| `imageUrl` | `str` | No |  |
+| `publishedAt` | `str` | Yes |  |
+| `tags` | `list` | No |  |
 | `title` | `str` | Yes |  |
-| `updated_at` | `str` | No |  |
+| `updatedAt` | `str` | No |  |
 | `url` | `str` | No |  |
 
 ### Operations

@@ -98,11 +98,11 @@ post = client.Post
 | `content` | `String` | No |  |
 | `excerpt` | `String` | No |  |
 | `id` | `String` | Yes |  |
-| `image_url` | `String` | No |  |
-| `published_at` | `String` | Yes |  |
-| `tag` | `Array` | No |  |
+| `imageUrl` | `String` | No |  |
+| `publishedAt` | `String` | Yes |  |
+| `tags` | `Array` | No |  |
 | `title` | `String` | Yes |  |
-| `updated_at` | `String` | No |  |
+| `updatedAt` | `String` | No |  |
 | `url` | `String` | No |  |
 
 ### Operations

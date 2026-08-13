@@ -103,11 +103,11 @@ fmt.Println(post.GetName()) // "post"
 | `content` | `string` | No |  |
 | `excerpt` | `string` | No |  |
 | `id` | `string` | Yes |  |
-| `image_url` | `string` | No |  |
-| `published_at` | `string` | Yes |  |
-| `tag` | `[]any` | No |  |
+| `imageUrl` | `string` | No |  |
+| `publishedAt` | `string` | Yes |  |
+| `tags` | `[]any` | No |  |
 | `title` | `string` | Yes |  |
-| `updated_at` | `string` | No |  |
+| `updatedAt` | `string` | No |  |
 | `url` | `string` | No |  |
 
 ### Operations

@@ -97,11 +97,11 @@ $post = $client->Post();
 | `content` | `string` | No |  |
 | `excerpt` | `string` | No |  |
 | `id` | `string` | Yes |  |
-| `image_url` | `string` | No |  |
-| `published_at` | `string` | Yes |  |
-| `tag` | `array` | No |  |
+| `imageUrl` | `string` | No |  |
+| `publishedAt` | `string` | Yes |  |
+| `tags` | `array` | No |  |
 | `title` | `string` | Yes |  |
-| `updated_at` | `string` | No |  |
+| `updatedAt` | `string` | No |  |
 | `url` | `string` | No |  |
 
 ### Operations

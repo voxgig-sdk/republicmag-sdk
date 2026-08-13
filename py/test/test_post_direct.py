@@ -3,9 +3,9 @@
 import json
 import pytest
 
-from utility.voxgig_struct import voxgig_struct as vs
+from republicmag_sdk.utility.voxgig_struct import voxgig_struct as vs
 from republicmag_sdk import RepublicmagSDK
-from core import helpers
+from republicmag_sdk.core import helpers
 from test import runner
 
 

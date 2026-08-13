@@ -7,11 +7,11 @@
         "content": "s70",
         "excerpt": "s71",
         "id": "POST00",
-        "image_url": "s73",
-        "published_at": "s74",
-        "tag": [],
+        "imageUrl": "s73",
+        "publishedAt": "s74",
+        "tags": [],
         "title": "s76",
-        "updated_at": "s77",
+        "updatedAt": "s77",
         "url": "s78"
       },
       "POST01": {
@@ -20,11 +20,11 @@
         "content": "sde",
         "excerpt": "sdf",
         "id": "POST01",
-        "image_url": "se1",
-        "published_at": "se2",
-        "tag": [],
+        "imageUrl": "se1",
+        "publishedAt": "se2",
+        "tags": [],
         "title": "se4",
-        "updated_at": "se5",
+        "updatedAt": "se5",
         "url": "se6"
       },
       "POST02": {
@@ -33,11 +33,11 @@
         "content": "s14c",
         "excerpt": "s14d",
         "id": "POST02",
-        "image_url": "s14f",
-        "published_at": "s150",
-        "tag": [],
+        "imageUrl": "s14f",
+        "publishedAt": "s150",
+        "tags": [],
         "title": "s152",
-        "updated_at": "s153",
+        "updatedAt": "s153",
         "url": "s154"
       }
     }
@@ -49,11 +49,11 @@
         "category": "s1b9",
         "content": "s1ba",
         "excerpt": "s1bb",
-        "image_url": "s1bd",
-        "published_at": "s1be",
-        "tag": [],
+        "imageUrl": "s1bd",
+        "publishedAt": "s1be",
+        "tags": [],
         "title": "s1c0",
-        "updated_at": "s1c1",
+        "updatedAt": "s1c1",
         "url": "s1c2"
       }
     }

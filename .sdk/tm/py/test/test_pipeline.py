@@ -16,11 +16,11 @@
 import pytest
 
 from projectname_sdk import RepublicmagSDK
-from core.error import RepublicmagError
-from core.result import RepublicmagResult
-from core.response import RepublicmagResponse
-from core.spec import RepublicmagSpec
-from feature.base_feature import RepublicmagBaseFeature
+from projectname_sdk.core.error import RepublicmagError
+from projectname_sdk.core.result import RepublicmagResult
+from projectname_sdk.core.response import RepublicmagResponse
+from projectname_sdk.core.spec import RepublicmagSpec
+from projectname_sdk.feature.base_feature import RepublicmagBaseFeature
 
 
 def _client():

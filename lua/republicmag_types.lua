@@ -12,11 +12,11 @@
 ---@field content? string
 ---@field excerpt? string
 ---@field id string
----@field image_url? string
----@field published_at string
----@field tag? table
+---@field imageUrl? string
+---@field publishedAt string
+---@field tags? table
 ---@field title string
----@field updated_at? string
+---@field updatedAt? string
 ---@field url? string
 
 ---@class PostListMatch
@@ -25,11 +25,11 @@
 ---@field content? string
 ---@field excerpt? string
 ---@field id? string
----@field image_url? string
----@field published_at? string
----@field tag? table
+---@field imageUrl? string
+---@field publishedAt? string
+---@field tags? table
 ---@field title? string
----@field updated_at? string
+---@field updatedAt? string
 ---@field url? string
 
 local M = {}

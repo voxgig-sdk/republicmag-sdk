@@ -1,4 +1,4 @@
-# ProjectName SDK exists test
+# Republicmag SDK exists test
 
 import pytest
 from republicmag_sdk import RepublicmagSDK

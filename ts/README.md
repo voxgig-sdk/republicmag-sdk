@@ -35,7 +35,9 @@ const client = new RepublicmagSDK()
 
 ### 2. List post records
 
-`list()` resolves to an array of Post objects — iterate it directly:
+`list()` resolves to an array of Post ENTITIES — every operation
+resolves to entities, not raw records. Iterate them directly, and call
+`.data()` on one for the record it holds:
 
 ```ts
 const posts = await client.Post().list()
@@ -120,7 +122,8 @@ Create a mock client for unit testing — no server required:
 const client = RepublicmagSDK.test()
 
 const post = await client.Post().list()
-// post is a bare entity populated with mock response data
+// post is the entity, populated with mock response data
+// — call post.data() for the record itself
 console.log(post)
 ```
 
@@ -289,11 +292,11 @@ The `prepare()` method returns:
 | `content` |  |
 | `excerpt` |  |
 | `id` |  |
-| `image_url` |  |
-| `published_at` |  |
-| `tag` |  |
+| `imageUrl` |  |
+| `publishedAt` |  |
+| `tags` |  |
 | `title` |  |
-| `updated_at` |  |
+| `updatedAt` |  |
 | `url` |  |
 
 Operations: list.
@@ -324,11 +327,11 @@ Create an instance: `const post = client.Post()`
 | `content` | `string` |  |
 | `excerpt` | `string` |  |
 | `id` | `string` |  |
-| `image_url` | `string` |  |
-| `published_at` | `string` |  |
-| `tag` | `any[]` |  |
+| `imageUrl` | `string` |  |
+| `publishedAt` | `string` |  |
+| `tags` | `any[]` |  |
 | `title` | `string` |  |
-| `updated_at` | `string` |  |
+| `updatedAt` | `string` |  |
 | `url` | `string` |  |
 
 #### Example: List

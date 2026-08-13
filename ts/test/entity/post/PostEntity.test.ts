@@ -63,7 +63,7 @@ describe('PostEntity', async () => {
     const post_ref01_ent = client.Post()
     const post_ref01_match: any = {}
 
-    const post_ref01_list = await post_ref01_ent.list(post_ref01_match)
+    const post_ref01_list = (await post_ref01_ent.list(post_ref01_match)).map((e: any) => e.data())
 
 
   })

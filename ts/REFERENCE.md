@@ -121,12 +121,32 @@ const post = client.Post()
 | `content` | `string` | No |  |
 | `excerpt` | `string` | No |  |
 | `id` | `string` | Yes |  |
-| `image_url` | `string` | No |  |
-| `published_at` | `string` | Yes |  |
-| `tag` | `any[]` | No |  |
+| `imageUrl` | `string` | No |  |
+| `publishedAt` | `string` | Yes |  |
+| `tags` | `any[]` | No |  |
 | `title` | `string` | Yes |  |
-| `updated_at` | `string` | No |  |
+| `updatedAt` | `string` | No |  |
 | `url` | `string` | No |  |
+
+### Actions
+
+This entity exposes custom API actions in addition to the standard
+operations. Select one with `$action` in the call's argument; the
+remaining keys are sent as that action's payload.
+
+| Action | Route | Call |
+| --- | --- | --- |
+| `recent` | `/api/posts/recent` | `client.Post().list({ $action: 'recent', ... })` |
+
+An action returns that action's OWN response, which is not necessarily a
+Post record — check the API definition for its shape.
+
+```ts
+const result = await client.Post().list({
+  $action: 'recent',
+  /* ...the action's own arguments */
+})
+```
 
 ### Operations
 

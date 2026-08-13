@@ -14,12 +14,12 @@ from __future__ import annotations
 
 from urllib.parse import quote
 
-from config import make_config
-from features import _make_feature
-from core.control import RepublicmagControl
-from core.error import RepublicmagError
-from core.result import RepublicmagResult
-from core.spec import RepublicmagSpec
+from republicmag_sdk.config import make_config
+from republicmag_sdk.features import _make_feature
+from republicmag_sdk.core.control import RepublicmagControl
+from republicmag_sdk.core.error import RepublicmagError
+from republicmag_sdk.core.result import RepublicmagResult
+from republicmag_sdk.core.spec import RepublicmagSpec
 
 
 # True when this SDK was generated with the named feature.
