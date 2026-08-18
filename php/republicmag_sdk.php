@@ -40,7 +40,7 @@ class RepublicmagSDK
         $utility = new RepublicmagUtility();
         $this->_utility = $utility;
 
-        $config = RepublicmagConfig::make_config();
+        $config = RepublicmagConfig::shared_config();
 
         $this->_rootctx = ($utility->make_context)([
             "client" => $this,

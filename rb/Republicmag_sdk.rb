@@ -28,7 +28,7 @@ class RepublicmagSDK
     utility = RepublicmagUtility.new
     @_utility = utility
 
-    config = RepublicmagConfig.make_config
+    config = RepublicmagConfig.shared_config
 
     @_rootctx = utility.make_context.call({
       "client" => self,

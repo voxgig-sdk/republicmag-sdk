@@ -15,7 +15,7 @@ require_relative "../Republicmag_sdk"
 module RepublicmagFeatureHarness
   # True when this SDK was generated with the named feature.
   def self.has_feature?(name)
-    f = RepublicmagConfig.make_config["feature"]
+    f = RepublicmagConfig.shared_config["feature"]
     f.is_a?(Hash) && !f[name].nil?
   end
 
