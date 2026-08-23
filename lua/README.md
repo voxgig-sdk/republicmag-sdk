@@ -231,17 +231,17 @@ Only `direct()` returns a response envelope — a `table` with `ok`,
 
 | Field | Description |
 | --- | --- |
-| `author` |  |
-| `category` |  |
-| `content` |  |
-| `excerpt` |  |
-| `id` |  |
-| `imageUrl` |  |
-| `publishedAt` |  |
-| `tags` |  |
-| `title` |  |
-| `updatedAt` |  |
-| `url` |  |
+| `author` | Author of the post |
+| `category` | Category of the post (politics, economics, society, culture, etc.) |
+| `content` | Full content of the post |
+| `excerpt` | Short excerpt or summary of the post |
+| `id` | Unique identifier for the post |
+| `imageUrl` | URL to the post's featured image |
+| `publishedAt` | Publication date and time of the post |
+| `tags` | Tags associated with the post |
+| `title` | Title of the post |
+| `updatedAt` | Last update date and time of the post |
+| `url` | URL to the full post on republicmag.io |
 
 Operations: List.
 
@@ -266,17 +266,17 @@ Create an instance: `local post = client:Post(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `string` |  |
-| `category` | `string` |  |
-| `content` | `string` |  |
-| `excerpt` | `string` |  |
-| `id` | `string` |  |
-| `imageUrl` | `string` |  |
-| `publishedAt` | `string` |  |
-| `tags` | `table` |  |
-| `title` | `string` |  |
-| `updatedAt` | `string` |  |
-| `url` | `string` |  |
+| `author` | `string` | Author of the post |
+| `category` | `string` | Category of the post (politics, economics, society, culture, etc.) |
+| `content` | `string` | Full content of the post |
+| `excerpt` | `string` | Short excerpt or summary of the post |
+| `id` | `string` | Unique identifier for the post |
+| `imageUrl` | `string` | URL to the post's featured image |
+| `publishedAt` | `string` | Publication date and time of the post |
+| `tags` | `table` | Tags associated with the post |
+| `title` | `string` | Title of the post |
+| `updatedAt` | `string` | Last update date and time of the post |
+| `url` | `string` | URL to the full post on republicmag.io |
 
 #### Example: List
 

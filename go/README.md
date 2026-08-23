@@ -6,7 +6,7 @@ The Golang SDK for the Republicmag API — an entity-oriented client using stand
 
 It exposes the API as capitalised, semantic **Entities** — e.g. `client.Post(nil)` — each with the same small set of operations (`List`) instead of raw URL paths and query strings. You call meaning, not endpoints, which keeps the cognitive load low.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb`, `ts` — see
 > the [top-level README](../README.md).
 
 
@@ -260,17 +260,17 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"author"` |  |
-| `"category"` |  |
-| `"content"` |  |
-| `"excerpt"` |  |
-| `"id"` |  |
-| `"imageUrl"` |  |
-| `"publishedAt"` |  |
-| `"tags"` |  |
-| `"title"` |  |
-| `"updatedAt"` |  |
-| `"url"` |  |
+| `"author"` | Author of the post |
+| `"category"` | Category of the post (politics, economics, society, culture, etc.) |
+| `"content"` | Full content of the post |
+| `"excerpt"` | Short excerpt or summary of the post |
+| `"id"` | Unique identifier for the post |
+| `"imageUrl"` | URL to the post's featured image |
+| `"publishedAt"` | Publication date and time of the post |
+| `"tags"` | Tags associated with the post |
+| `"title"` | Title of the post |
+| `"updatedAt"` | Last update date and time of the post |
+| `"url"` | URL to the full post on republicmag.io |
 
 Operations: List.
 
@@ -295,17 +295,17 @@ Create an instance: `post := client.Post(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `string` |  |
-| `category` | `string` |  |
-| `content` | `string` |  |
-| `excerpt` | `string` |  |
-| `id` | `string` |  |
-| `imageUrl` | `string` |  |
-| `publishedAt` | `string` |  |
-| `tags` | `[]any` |  |
-| `title` | `string` |  |
-| `updatedAt` | `string` |  |
-| `url` | `string` |  |
+| `author` | `string` | Author of the post |
+| `category` | `string` | Category of the post (politics, economics, society, culture, etc.) |
+| `content` | `string` | Full content of the post |
+| `excerpt` | `string` | Short excerpt or summary of the post |
+| `id` | `string` | Unique identifier for the post |
+| `imageUrl` | `string` | URL to the post's featured image |
+| `publishedAt` | `string` | Publication date and time of the post |
+| `tags` | `[]any` | Tags associated with the post |
+| `title` | `string` | Title of the post |
+| `updatedAt` | `string` | Last update date and time of the post |
+| `url` | `string` | URL to the full post on republicmag.io |
 
 #### Example: List
 

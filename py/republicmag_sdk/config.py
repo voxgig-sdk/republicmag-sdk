@@ -28,6 +28,9 @@ def make_config():
     return {
         "main": {
             "name": "Republicmag",
+            "slug": "republicmag",
+            "version": "0.0.1",
+            "target": "py",
         },
         "feature": {
             "test": {
@@ -50,49 +53,60 @@ def make_config():
         "fields": [
           {
             "name": "author",
+            "short": "Author of the post",
             "type": "`$STRING`",
           },
           {
             "name": "category",
+            "short": "Category of the post (politics, economics, society, culture, etc.)",
             "type": "`$STRING`",
           },
           {
             "name": "content",
+            "short": "Full content of the post",
             "type": "`$STRING`",
           },
           {
             "name": "excerpt",
+            "short": "Short excerpt or summary of the post",
             "type": "`$STRING`",
           },
           {
             "name": "id",
             "req": True,
+            "short": "Unique identifier for the post",
             "type": "`$STRING`",
           },
           {
             "name": "imageUrl",
+            "short": "URL to the post's featured image",
             "type": "`$STRING`",
           },
           {
             "name": "publishedAt",
             "req": True,
+            "short": "Publication date and time of the post",
             "type": "`$STRING`",
           },
           {
             "name": "tags",
+            "short": "Tags associated with the post",
             "type": "`$ARRAY`",
           },
           {
             "name": "title",
             "req": True,
+            "short": "Title of the post",
             "type": "`$STRING`",
           },
           {
             "name": "updatedAt",
+            "short": "Last update date and time of the post",
             "type": "`$STRING`",
           },
           {
             "name": "url",
+            "short": "URL to the full post on republicmag.io",
             "type": "`$STRING`",
           },
         ],

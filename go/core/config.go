@@ -11,6 +11,9 @@ func MakeConfig() map[string]any {
 	return map[string]any{
 		"main": map[string]any{
 			"name": "Republicmag",
+			"slug": "republicmag",
+			"version": "0.0.1",
+			"target": "go",
 		},
 		"feature": map[string]any{
 			"test": map[string]any{
@@ -33,49 +36,60 @@ func MakeConfig() map[string]any {
 				"fields": []any{
 					map[string]any{
 						"name": "author",
+						"short": "Author of the post",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "category",
+						"short": "Category of the post (politics, economics, society, culture, etc.)",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "content",
+						"short": "Full content of the post",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "excerpt",
+						"short": "Short excerpt or summary of the post",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "id",
 						"req": true,
+						"short": "Unique identifier for the post",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "imageUrl",
+						"short": "URL to the post's featured image",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "publishedAt",
 						"req": true,
+						"short": "Publication date and time of the post",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "tags",
+						"short": "Tags associated with the post",
 						"type": "`$ARRAY`",
 					},
 					map[string]any{
 						"name": "title",
 						"req": true,
+						"short": "Title of the post",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "updatedAt",
+						"short": "Last update date and time of the post",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "url",
+						"short": "URL to the full post on republicmag.io",
 						"type": "`$STRING`",
 					},
 				},

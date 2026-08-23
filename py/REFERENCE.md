@@ -87,17 +87,17 @@ post = client.Post()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `author` | `str` | No |  |
-| `category` | `str` | No |  |
-| `content` | `str` | No |  |
-| `excerpt` | `str` | No |  |
-| `id` | `str` | Yes |  |
-| `imageUrl` | `str` | No |  |
-| `publishedAt` | `str` | Yes |  |
-| `tags` | `list` | No |  |
-| `title` | `str` | Yes |  |
-| `updatedAt` | `str` | No |  |
-| `url` | `str` | No |  |
+| `author` | `str` | No | Author of the post |
+| `category` | `str` | No | Category of the post (politics, economics, society, culture, etc.) |
+| `content` | `str` | No | Full content of the post |
+| `excerpt` | `str` | No | Short excerpt or summary of the post |
+| `id` | `str` | Yes | Unique identifier for the post |
+| `imageUrl` | `str` | No | URL to the post's featured image |
+| `publishedAt` | `str` | Yes | Publication date and time of the post |
+| `tags` | `list` | No | Tags associated with the post |
+| `title` | `str` | Yes | Title of the post |
+| `updatedAt` | `str` | No | Last update date and time of the post |
+| `url` | `str` | No | URL to the full post on republicmag.io |
 
 ### Operations
 

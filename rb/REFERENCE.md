@@ -93,17 +93,17 @@ post = client.Post
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `author` | `String` | No |  |
-| `category` | `String` | No |  |
-| `content` | `String` | No |  |
-| `excerpt` | `String` | No |  |
-| `id` | `String` | Yes |  |
-| `imageUrl` | `String` | No |  |
-| `publishedAt` | `String` | Yes |  |
-| `tags` | `Array` | No |  |
-| `title` | `String` | Yes |  |
-| `updatedAt` | `String` | No |  |
-| `url` | `String` | No |  |
+| `author` | `String` | No | Author of the post |
+| `category` | `String` | No | Category of the post (politics, economics, society, culture, etc.) |
+| `content` | `String` | No | Full content of the post |
+| `excerpt` | `String` | No | Short excerpt or summary of the post |
+| `id` | `String` | Yes | Unique identifier for the post |
+| `imageUrl` | `String` | No | URL to the post's featured image |
+| `publishedAt` | `String` | Yes | Publication date and time of the post |
+| `tags` | `Array` | No | Tags associated with the post |
+| `title` | `String` | Yes | Title of the post |
+| `updatedAt` | `String` | No | Last update date and time of the post |
+| `url` | `String` | No | URL to the full post on republicmag.io |
 
 ### Operations
 

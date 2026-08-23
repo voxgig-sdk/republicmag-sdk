@@ -36,66 +36,77 @@
               "active": true,
               "name": "author",
               "req": false,
+              "short": "Author of the post",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "category",
               "req": false,
+              "short": "Category of the post (politics, economics, society, culture, etc.)",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "content",
               "req": false,
+              "short": "Full content of the post",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "excerpt",
               "req": false,
+              "short": "Short excerpt or summary of the post",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "id",
               "req": true,
+              "short": "Unique identifier for the post",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "imageUrl",
               "req": false,
+              "short": "URL to the post's featured image",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "publishedAt",
               "req": true,
+              "short": "Publication date and time of the post",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "tags",
               "req": false,
+              "short": "Tags associated with the post",
               "type": "`$ARRAY`"
             },
             {
               "active": true,
               "name": "title",
               "req": true,
+              "short": "Title of the post",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "updatedAt",
               "req": false,
+              "short": "Last update date and time of the post",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "url",
               "req": false,
+              "short": "URL to the full post on republicmag.io",
               "type": "`$STRING`"
             }
           ],

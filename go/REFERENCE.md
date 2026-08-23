@@ -98,17 +98,17 @@ fmt.Println(post.GetName()) // "post"
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `author` | `string` | No |  |
-| `category` | `string` | No |  |
-| `content` | `string` | No |  |
-| `excerpt` | `string` | No |  |
-| `id` | `string` | Yes |  |
-| `imageUrl` | `string` | No |  |
-| `publishedAt` | `string` | Yes |  |
-| `tags` | `[]any` | No |  |
-| `title` | `string` | Yes |  |
-| `updatedAt` | `string` | No |  |
-| `url` | `string` | No |  |
+| `author` | `string` | No | Author of the post |
+| `category` | `string` | No | Category of the post (politics, economics, society, culture, etc.) |
+| `content` | `string` | No | Full content of the post |
+| `excerpt` | `string` | No | Short excerpt or summary of the post |
+| `id` | `string` | Yes | Unique identifier for the post |
+| `imageUrl` | `string` | No | URL to the post's featured image |
+| `publishedAt` | `string` | Yes | Publication date and time of the post |
+| `tags` | `[]any` | No | Tags associated with the post |
+| `title` | `string` | Yes | Title of the post |
+| `updatedAt` | `string` | No | Last update date and time of the post |
+| `url` | `string` | No | URL to the full post on republicmag.io |
 
 ### Operations
 

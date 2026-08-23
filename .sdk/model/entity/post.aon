@@ -8,56 +8,67 @@ main: kit: entity: post: {
     {
       name: "author"
       req: false
+      short: "Author of the post"
       type: "`$STRING`"
     }
     {
       name: "category"
       req: false
+      short: "Category of the post (politics, economics, society, culture, etc.)"
       type: "`$STRING`"
     }
     {
       name: "content"
       req: false
+      short: "Full content of the post"
       type: "`$STRING`"
     }
     {
       name: "excerpt"
       req: false
+      short: "Short excerpt or summary of the post"
       type: "`$STRING`"
     }
     {
       name: "id"
       req: true
+      short: "Unique identifier for the post"
       type: "`$STRING`"
     }
     {
       name: "imageUrl"
       req: false
+      short: "URL to the post's featured image"
       type: "`$STRING`"
     }
     {
       name: "publishedAt"
       req: true
+      short: "Publication date and time of the post"
       type: "`$STRING`"
     }
     {
       name: "tags"
       req: false
+      short: "Tags associated with the post"
       type: "`$ARRAY`"
     }
     {
       name: "title"
       req: true
+      short: "Title of the post"
       type: "`$STRING`"
     }
     {
       name: "updatedAt"
       req: false
+      short: "Last update date and time of the post"
       type: "`$STRING`"
     }
     {
       name: "url"
       req: false
+      short: "URL to the full post on republicmag.io"
       type: "`$STRING`"
     }
   ]

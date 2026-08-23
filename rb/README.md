@@ -237,17 +237,17 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `author` |  |
-| `category` |  |
-| `content` |  |
-| `excerpt` |  |
-| `id` |  |
-| `imageUrl` |  |
-| `publishedAt` |  |
-| `tags` |  |
-| `title` |  |
-| `updatedAt` |  |
-| `url` |  |
+| `author` | Author of the post |
+| `category` | Category of the post (politics, economics, society, culture, etc.) |
+| `content` | Full content of the post |
+| `excerpt` | Short excerpt or summary of the post |
+| `id` | Unique identifier for the post |
+| `imageUrl` | URL to the post's featured image |
+| `publishedAt` | Publication date and time of the post |
+| `tags` | Tags associated with the post |
+| `title` | Title of the post |
+| `updatedAt` | Last update date and time of the post |
+| `url` | URL to the full post on republicmag.io |
 
 Operations: List.
 
@@ -272,17 +272,17 @@ Create an instance: `post = client.Post`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `String` |  |
-| `category` | `String` |  |
-| `content` | `String` |  |
-| `excerpt` | `String` |  |
-| `id` | `String` |  |
-| `imageUrl` | `String` |  |
-| `publishedAt` | `String` |  |
-| `tags` | `Array` |  |
-| `title` | `String` |  |
-| `updatedAt` | `String` |  |
-| `url` | `String` |  |
+| `author` | `String` | Author of the post |
+| `category` | `String` | Category of the post (politics, economics, society, culture, etc.) |
+| `content` | `String` | Full content of the post |
+| `excerpt` | `String` | Short excerpt or summary of the post |
+| `id` | `String` | Unique identifier for the post |
+| `imageUrl` | `String` | URL to the post's featured image |
+| `publishedAt` | `String` | Publication date and time of the post |
+| `tags` | `Array` | Tags associated with the post |
+| `title` | `String` | Title of the post |
+| `updatedAt` | `String` | Last update date and time of the post |
+| `url` | `String` | URL to the full post on republicmag.io |
 
 #### Example: List
 

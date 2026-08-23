@@ -243,17 +243,17 @@ On error, `ok` is `False` and `err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `author` |  |
-| `category` |  |
-| `content` |  |
-| `excerpt` |  |
-| `id` |  |
-| `imageUrl` |  |
-| `publishedAt` |  |
-| `tags` |  |
-| `title` |  |
-| `updatedAt` |  |
-| `url` |  |
+| `author` | Author of the post |
+| `category` | Category of the post (politics, economics, society, culture, etc.) |
+| `content` | Full content of the post |
+| `excerpt` | Short excerpt or summary of the post |
+| `id` | Unique identifier for the post |
+| `imageUrl` | URL to the post's featured image |
+| `publishedAt` | Publication date and time of the post |
+| `tags` | Tags associated with the post |
+| `title` | Title of the post |
+| `updatedAt` | Last update date and time of the post |
+| `url` | URL to the full post on republicmag.io |
 
 Operations: List.
 
@@ -278,17 +278,17 @@ Create an instance: `post = client.Post()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `str` |  |
-| `category` | `str` |  |
-| `content` | `str` |  |
-| `excerpt` | `str` |  |
-| `id` | `str` |  |
-| `imageUrl` | `str` |  |
-| `publishedAt` | `str` |  |
-| `tags` | `list` |  |
-| `title` | `str` |  |
-| `updatedAt` | `str` |  |
-| `url` | `str` |  |
+| `author` | `str` | Author of the post |
+| `category` | `str` | Category of the post (politics, economics, society, culture, etc.) |
+| `content` | `str` | Full content of the post |
+| `excerpt` | `str` | Short excerpt or summary of the post |
+| `id` | `str` | Unique identifier for the post |
+| `imageUrl` | `str` | URL to the post's featured image |
+| `publishedAt` | `str` | Publication date and time of the post |
+| `tags` | `list` | Tags associated with the post |
+| `title` | `str` | Title of the post |
+| `updatedAt` | `str` | Last update date and time of the post |
+| `url` | `str` | URL to the full post on republicmag.io |
 
 #### Example: List
 
