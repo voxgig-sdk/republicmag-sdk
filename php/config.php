@@ -42,6 +42,7 @@ class RepublicmagConfig
           'options' => [
             'active' => false,
           ],
+          'transport' => 'base',
         ],
             ],
             "options" => [
