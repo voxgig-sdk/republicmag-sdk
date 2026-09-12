@@ -70,11 +70,13 @@ module RepublicmagConfig
               "type" => "`$STRING`",
             },
             {
+              "format" => "uri",
               "name" => "imageUrl",
               "short" => "URL to the post's featured image",
               "type" => "`$STRING`",
             },
             {
+              "format" => "date-time",
               "name" => "publishedAt",
               "req" => true,
               "short" => "Publication date and time of the post",
@@ -92,16 +94,22 @@ module RepublicmagConfig
               "type" => "`$STRING`",
             },
             {
+              "format" => "date-time",
               "name" => "updatedAt",
               "short" => "Last update date and time of the post",
               "type" => "`$STRING`",
             },
             {
+              "format" => "uri",
               "name" => "url",
               "short" => "URL to the full post on republicmag.io",
               "type" => "`$STRING`",
             },
           ],
+          "id" => {
+            "field" => "id",
+            "name" => "id",
+          },
           "name" => "post",
           "op" => {
             "list" => {
@@ -113,10 +121,16 @@ module RepublicmagConfig
                   "kind" => "http",
                   "method" => "GET",
                   "orig" => "/api/posts/recent",
-                  "parts" => [
-                    "api",
-                    "posts",
-                    "recent",
+                  "segments" => [
+                    {
+                      "lit" => "api",
+                    },
+                    {
+                      "lit" => "posts",
+                    },
+                    {
+                      "lit" => "recent",
+                    },
                   ],
                   "select" => {
                     "$action" => "recent",
@@ -125,6 +139,11 @@ module RepublicmagConfig
                     "req" => "`reqdata`",
                     "res" => "`body`",
                   },
+                  "parts" => [
+                    "api",
+                    "posts",
+                    "recent",
+                  ],
                 },
               ],
             },

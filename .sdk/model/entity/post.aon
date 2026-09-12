@@ -36,12 +36,14 @@ main: kit: entity: post: {
       type: "`$STRING`"
     }
     {
+      format: "uri"
       name: "imageUrl"
       req: false
       short: "URL to the post's featured image"
       type: "`$STRING`"
     }
     {
+      format: "date-time"
       name: "publishedAt"
       req: true
       short: "Publication date and time of the post"
@@ -60,12 +62,14 @@ main: kit: entity: post: {
       type: "`$STRING`"
     }
     {
+      format: "date-time"
       name: "updatedAt"
       req: false
       short: "Last update date and time of the post"
       type: "`$STRING`"
     }
     {
+      format: "uri"
       name: "url"
       req: false
       short: "URL to the full post on republicmag.io"
@@ -86,10 +90,16 @@ main: kit: entity: post: {
         {
           method: "GET"
           orig: "/api/posts/recent"
-          parts: [
-            "api"
-            "posts"
-            "recent"
+          segments: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "posts"
+            }
+            {
+              lit: "recent"
+            }
           ]
           select: {
             "$action": "recent"

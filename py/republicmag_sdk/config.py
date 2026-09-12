@@ -1,6 +1,14 @@
 # Republicmag SDK configuration
 
 
+# The sekreto plugin DEFINITIONS the model selected per feature, imported
+# above by name from the modules the catalogue's active `plugin.def`
+# entries declare. Handed to each feature (secrets builds its Sekreto
+# with them): a provider kind not listed here is unknown to that SDK.
+FEATURE_PLUGINS = {
+}
+
+
 _shared_config = None
 
 
@@ -79,11 +87,13 @@ def make_config():
             "type": "`$STRING`",
           },
           {
+            "format": "uri",
             "name": "imageUrl",
             "short": "URL to the post's featured image",
             "type": "`$STRING`",
           },
           {
+            "format": "date-time",
             "name": "publishedAt",
             "req": True,
             "short": "Publication date and time of the post",
@@ -101,16 +111,22 @@ def make_config():
             "type": "`$STRING`",
           },
           {
+            "format": "date-time",
             "name": "updatedAt",
             "short": "Last update date and time of the post",
             "type": "`$STRING`",
           },
           {
+            "format": "uri",
             "name": "url",
             "short": "URL to the full post on republicmag.io",
             "type": "`$STRING`",
           },
         ],
+        "id": {
+          "field": "id",
+          "name": "id",
+        },
         "name": "post",
         "op": {
           "list": {
@@ -122,10 +138,16 @@ def make_config():
                 "kind": "http",
                 "method": "GET",
                 "orig": "/api/posts/recent",
-                "parts": [
-                  "api",
-                  "posts",
-                  "recent",
+                "segments": [
+                  {
+                    "lit": "api",
+                  },
+                  {
+                    "lit": "posts",
+                  },
+                  {
+                    "lit": "recent",
+                  },
                 ],
                 "select": {
                   "$action": "recent",
@@ -134,6 +156,11 @@ def make_config():
                   "req": "`reqdata`",
                   "res": "`body`",
                 },
+                "parts": [
+                  "api",
+                  "posts",
+                  "recent",
+                ],
               },
             ],
           },

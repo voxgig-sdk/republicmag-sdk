@@ -10,6 +10,17 @@ const FEATURE_CLASS: Record<string, typeof BaseFeature> = {
 }
 
 
+// Per-feature plugin DEFINITIONS (voxgig/plugin `Definition` values), from
+// the model's active plugin groups. A feature that takes a `plugins` option
+// (secrets over sekreto) reads its own entry; a feature with no plugins has
+// none. Named imports above make each definition statically reachable, so
+// an SDK carries exactly the plugin modules its model selects — the same
+// leanness the old side-effect registry imports bought, without a registry.
+const FEATURE_PLUGINS: Record<string, any[]> = {
+  
+}
+
+
 class Config {
 
   makeFeature(this: any, fn: string) {
@@ -93,11 +104,13 @@ class Config {
           "type": "`$STRING`"
         },
         {
+          "format": "uri",
           "name": "imageUrl",
           "short": "URL to the post's featured image",
           "type": "`$STRING`"
         },
         {
+          "format": "date-time",
           "name": "publishedAt",
           "req": true,
           "short": "Publication date and time of the post",
@@ -115,16 +128,22 @@ class Config {
           "type": "`$STRING`"
         },
         {
+          "format": "date-time",
           "name": "updatedAt",
           "short": "Last update date and time of the post",
           "type": "`$STRING`"
         },
         {
+          "format": "uri",
           "name": "url",
           "short": "URL to the full post on republicmag.io",
           "type": "`$STRING`"
         }
       ],
+      "id": {
+        "field": "id",
+        "name": "id"
+      },
       "name": "post",
       "op": {
         "list": {
@@ -136,10 +155,16 @@ class Config {
               "kind": "http",
               "method": "GET",
               "orig": "/api/posts/recent",
-              "parts": [
-                "api",
-                "posts",
-                "recent"
+              "segments": [
+                {
+                  "lit": "api"
+                },
+                {
+                  "lit": "posts"
+                },
+                {
+                  "lit": "recent"
+                }
               ],
               "select": {
                 "$action": "recent"
@@ -147,7 +172,12 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              }
+              },
+              "parts": [
+                "api",
+                "posts",
+                "recent"
+              ]
             }
           ]
         }
@@ -163,6 +193,7 @@ class Config {
 const config = new Config()
 
 export {
-  config
+  config,
+  FEATURE_PLUGINS,
 }
 
