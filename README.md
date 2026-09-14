@@ -105,7 +105,7 @@ local results, err = client:Post():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/republicmag` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/releases) |
+| TypeScript | `@voxgig-sdk/republicmag-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/releases) |
 | Python | `voxgig-sdk-republicmag` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/releases) |
 | PHP | `voxgig-sdk/republicmag` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/releases) |
 | Golang | `github.com/voxgig-sdk/republicmag-sdk/go` | `go get github.com/voxgig-sdk/republicmag-sdk/go@latest` |
@@ -119,7 +119,7 @@ local results, err = client:Post():list()
 ### TypeScript
 
 ```ts
-import { RepublicmagSDK } from '@voxgig-sdk/republicmag'
+import { RepublicmagSDK } from '@voxgig-sdk/republicmag-sdk'
 
 const client = new RepublicmagSDK()
 

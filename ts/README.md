@@ -28,7 +28,7 @@ loading a specific record.
 ### 1. Create a client
 
 ```ts
-import { RepublicmagSDK } from '@voxgig-sdk/republicmag'
+import { RepublicmagSDK } from '@voxgig-sdk/republicmag-sdk'
 
 const client = new RepublicmagSDK()
 ```
@@ -423,7 +423,7 @@ republicmag/
 Import the SDK from the package root:
 
 ```ts
-import { RepublicmagSDK } from '@voxgig-sdk/republicmag'
+import { RepublicmagSDK } from '@voxgig-sdk/republicmag-sdk'
 ```
 
 ### Entity state
