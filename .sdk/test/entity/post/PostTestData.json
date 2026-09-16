@@ -57,5 +57,152 @@
         "url": "s1c2"
       }
     }
+  },
+  "requests": {
+    "GET /api/posts/recent": {
+      "provenance": "operation-contract",
+      "contract": {
+        "operationId": "getPostsRecent",
+        "parameters": [],
+        "protocol": "http",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "properties": {
+                      "author": {
+                        "description": "Author of the post",
+                        "type": "string"
+                      },
+                      "category": {
+                        "description": "Category of the post (politics, economics, society, culture, etc.)",
+                        "enum": [
+                          "politics",
+                          "economics",
+                          "society",
+                          "culture",
+                          "analytics",
+                          "news",
+                          "commentary"
+                        ],
+                        "type": "string"
+                      },
+                      "content": {
+                        "description": "Full content of the post",
+                        "type": "string"
+                      },
+                      "excerpt": {
+                        "description": "Short excerpt or summary of the post",
+                        "type": "string"
+                      },
+                      "id": {
+                        "description": "Unique identifier for the post",
+                        "type": "string"
+                      },
+                      "imageUrl": {
+                        "description": "URL to the post's featured image",
+                        "format": "uri",
+                        "type": "string"
+                      },
+                      "publishedAt": {
+                        "description": "Publication date and time of the post",
+                        "format": "date-time",
+                        "type": "string"
+                      },
+                      "tags": {
+                        "description": "Tags associated with the post",
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "title": {
+                        "description": "Title of the post",
+                        "type": "string"
+                      },
+                      "updatedAt": {
+                        "description": "Last update date and time of the post",
+                        "format": "date-time",
+                        "type": "string"
+                      },
+                      "url": {
+                        "description": "URL to the full post on republicmag.io",
+                        "format": "uri",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "title",
+                      "publishedAt"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful response with recent posts"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "code": {
+                      "description": "Error code",
+                      "type": "string"
+                    },
+                    "error": {
+                      "description": "Error message",
+                      "type": "string"
+                    },
+                    "message": {
+                      "description": "Detailed error message",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Bad request"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "code": {
+                      "description": "Error code",
+                      "type": "string"
+                    },
+                    "error": {
+                      "description": "Error message",
+                      "type": "string"
+                    },
+                    "message": {
+                      "description": "Detailed error message",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Internal server error"
+          }
+        },
+        "securitySource": "unspecified"
+      }
+    }
   }
 }
