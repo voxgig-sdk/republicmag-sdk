@@ -105,12 +105,12 @@ local results, err = client:Post():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/republicmag-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/releases) |
-| Python | `voxgig-sdk-republicmag` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/releases) |
-| PHP | `voxgig-sdk/republicmag` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/releases) |
+| TypeScript | `@voxgig-sdk/republicmag-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/tags) |
+| Python | `voxgig-sdk-republicmag` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/tags) |
+| PHP | `voxgig-sdk/republicmag` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/tags) |
 | Golang | `github.com/voxgig-sdk/republicmag-sdk/go` | `go get github.com/voxgig-sdk/republicmag-sdk/go@latest` |
-| Ruby | `voxgig-sdk-republicmag` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/releases) |
-| Lua | `voxgig-sdk-republicmag` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/releases) |
+| Ruby | `voxgig-sdk-republicmag` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/tags) |
+| Lua | `voxgig-sdk-republicmag` | publish pending — [install from git tag](https://github.com/voxgig-sdk/republicmag-sdk/tags) |
 | Go CLI | `github.com/voxgig-sdk/republicmag-sdk/go-cli` | `go install github.com/voxgig-sdk/republicmag-sdk/go-cli/cmd/republicmag@latest` |
 | Go MCP server | `github.com/voxgig-sdk/republicmag-sdk/go-mcp` | `go get github.com/voxgig-sdk/republicmag-sdk/go-mcp@latest` |
 
